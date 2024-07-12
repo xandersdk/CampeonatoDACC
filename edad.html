@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <b>Ingrese su edad</b>
+    <br>
+    <br>
+    <input type="number" name="" value="" placeholder="ingresa tu edad" id="edad">
+    <br>
+    <br>
+    <button type="button" onclick="validarEdad()" name="button" >Verificar</button>
+    <script type="text/javascript">
+      function validarEdad(){
+        var edad=parseInt(
+        document.getElementById('edad').value
+        );
+        //alert(edad);
+
+      //console.console.log(edad);
+      if (edad>=18)
+      {
+          alert ("Es mayor de edad: " +edad);
+      }else {
+          alert("Es menor de edad" +edad);
+
+      }
+    }
+    </script>
+
+  </body>
+</html>

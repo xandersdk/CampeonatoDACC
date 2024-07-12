@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>area</title>
+  </head>
+  <body>
+    <b>Ingrese la base</b>
+    <br><br>
+    <input type="number" name="" value="" placeholder="ingrese la base" id="b">
+    <br><br>
+    <b>Ingrese la altura</b>
+<br><br>
+    <input type="number" name="" value="" placeholder="ingrese la altura" id="a">
+<br><br>
+    <button type="button" onclick="validar()" name="button">validar</button>
+  <script type="text/javascript">
+    function validar(){
+      var b = parseInt(document.getElementById('b').value);
+      var a = parseInt(document.getElementById('a').value);
+      var mult = (parseInt(b) * parseInt(a)/2);
+      alert("el area del triangulo es : "+mult)
+
+    }
+
+  </script>
+  </body>
+</html>

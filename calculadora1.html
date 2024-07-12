@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <style media="screen">
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #3498db;
+        border: none;
+        border-radius: 5px;
+              }
+    </style>
+    <b>Primer # :</b>
+    <input type="number" id="n1" value="">
+    <br>
+    <br>
+    <b>Segundo # :</b>
+    <input type="number" id="n2" value="">
+    <br>
+    <br>
+    <button onclick="sumar()" type="button" name="Sumar">Sumar</button>
+    <button onclick="restar()" type="button" name="Restar">Restar</button>
+    <button onclick="mutliplicacion()" type="button" name="Multiplicacion">Multiplicacion</button>
+    <button onclick="div()" type="button" name="Division">Division</button>
+    <script type="text/javascript">
+      function sumar() {
+        var num1 = document.getElementById('n1').value;
+        var num2 = document.getElementById('n2').value;
+        alert(parseInt(num1) + parseInt(num2));
+      }
+
+      function restar() {
+        var num1 = document.getElementById('n1').value;
+        //alert(num1);
+        var num2 = document.getElementById('n2').value;
+        alert(parseInt(num1) - parseInt(num2));
+      }
+
+      function mutliplicacion() {
+        var num1 = document.getElementById('n1').value;
+        //alert(num1);
+        var num2 = document.getElementById('n2').value;
+        alert(parseInt(num1) * parseInt(num2));
+      }
+
+      function div() {
+        var num1 = document.getElementById('n1').value;
+        //alert(num1);
+        var num2 = document.getElementById('n2').value;
+        alert(parseInt(num1) / parseInt(num2));
+      }
+    </script>
+  </body>
+</html>

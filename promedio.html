@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Promedio</title>
+  </head>
+  <body>
+        <b>Ingrese la primera nota</b>
+        <input type="number" name="" value="" placeholder="ingresa primera nota" id="n1">
+        <br><br>
+        <b>Ingrese la segunda nota</b>
+        <input type="number" name="" value="" placeholder="ingresa sefunda nota" id="n2">
+        <br><br>
+        <b>Ingrese la tercera nota</b>
+        <input type="number" name="" value="" placeholder="ingresa tercera nota" id="n3">
+
+        <button type="button" onclick="calcular()" name="button" >Calcular</button>
+        <script type="text/javascript">
+
+          function calcular() {
+            var num1 = parseInt(document.getElementById('n1').value);
+            var num2 = parseInt(document.getElementById('n2').value);
+            var num3 =parseInt(document.getElementById('n3').value);
+            var suma = (parseInt(num1) + parseInt(num2)+ parseInt(num3));
+            var prom = (parseInt(suma)/3);
+            //alert ("")
+
+            if (prom>=7) {
+              alert ("Aprueba con : " + prom);
+              }else {
+              alert ("Repueba con : " + prom);
+
+
+            }
+
+          }
+
+        </script>
+
+  </body>
+</html>

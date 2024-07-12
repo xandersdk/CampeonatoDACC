@@ -1,0 +1,14 @@
+/**crear un archivo externo**/
+.texto{
+  color: green;
+  font-weight: bold;
+  border: 1px solid blue;
+  text-align: center;
+}
+
+.texto:hover{
+  color: red;
+  font-weight: normal;
+  border: 1px solid orange;
+
+}

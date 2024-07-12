@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <b>Ingrese su edad</b>
+    <br>
+    <br>
+    <input type="number" name="" value="" placeholder="ingresa tu edad" id="edad">
+    <br>
+    <br>
+    <button type="button" onclick="validarEdad()" name="button" >Verificar</button>
+    <script type="text/javascript">
+      function validarEdad(){
+        var e=parseInt($("#edad").val());
+        if (e>=18)
+        {
+            alert ("Es mayor de edad: " +e);
+        }else {
+            alert("Es menor de edad: " +e);
+
+        }
+
+    }
+    </script>
+
+
+  </body>
+</html>
